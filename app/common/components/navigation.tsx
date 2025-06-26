@@ -33,9 +33,8 @@ const menus = [
         description: "월간 정기 모임 리스트",
         to: "/gathering/regular",
       },
-
       {
-        name: "주제별 모임",
+        name: "특별 모임",
         description: "도서 주제별 모임 리스트",
         to: "/gathering/special",
       },
@@ -48,7 +47,7 @@ const menus = [
   },
   {
     name: "도서정보",
-    to: "/books",
+    to: "/book-info",
     items: [
       {
         name: "도서정보",
