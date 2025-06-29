@@ -4,6 +4,6 @@ export const meta: MetaFunction = () => {
   return [{ title: "Home | Dreampartners" }, { name: "description", content: "Welcome to Dreampartners" }];
 };
 
-export default function Gathering() {
-  return <div>Gathering</div>;
+export default function Special() {
+  return <div>모임 수정</div>;
 }

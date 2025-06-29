@@ -2,11 +2,12 @@ import { type RouteConfig, index, prefix, route } from "@react-router/dev/routes
 
 export default [
   index("common/pages/home.tsx"),
-  ...prefix("gathering", [
-    index("features/pages/gathering.tsx"),
-    route("/regular", "features/pages/gathering-regular.tsx"),
-    route("/special", "features/pages/gathering-special.tsx"),
-    route("/impromptu", "features/pages/gathering-impromptu.tsx"),
+  ...prefix("gatherings", [
+    index("features/gathering/pages/gathering.tsx"),
+    route("/list", "features/gathering/pages/gathering-redirect.tsx"),
+    route("/create", "features/gathering/pages/gathering-create.tsx"),
+    route("/modify", "features/gathering/pages/gathering-modify.tsx"),
+    route("/delete", "features/gathering/pages/gathering-delete.tsx"),
   ]),
   ...prefix("book-info", [
     index("features/pages/book-info.tsx"),

@@ -25,70 +25,75 @@ import { BarChart3Icon, BellIcon, LogOutIcon, MessageCircleIcon, SettingsIcon, U
 
 const menus = [
   {
-    name: "모임현황",
-    to: "/gathering",
+    name: "모임 정보",
+    to: "/gatherings",
     items: [
       {
-        name: "정기모임",
-        description: "월간 정기 모임 리스트",
-        to: "/gathering/regular",
+        name: "모임 리스트",
+        description: "모임 리스트",
+        to: "/gatherings/list",
       },
       {
-        name: "특별 모임",
-        description: "도서 주제별 모임 리스트",
-        to: "/gathering/special",
+        name: "모임 생성",
+        description: "모임 만들기",
+        to: "/gatherings/create",
       },
       {
-        name: "즉흥모임",
-        description: "당일 즉흥 모임 리스트",
-        to: "/gathering/impromptu",
+        name: "모임 수정",
+        description: "모임 수정하기",
+        to: "/gatherings/modify",
+      },
+      {
+        name: "모임 삭제",
+        description: "모임 삭제하기",
+        to: "/gatherings/delete",
       },
     ],
   },
-  {
-    name: "도서정보",
-    to: "/book-info",
-    items: [
-      {
-        name: "도서정보",
-        description: "월간 정기 모임 리스트",
-        to: "/book-info/books",
-      },
+  // {
+  //   name: "도서정보",
+  //   to: "/book-info",
+  //   items: [
+  //     {
+  //       name: "도서정보",
+  //       description: "월간 정기 모임 리스트",
+  //       to: "/book-info/books",
+  //     },
 
-      {
-        name: "작가정보",
-        description: "도서 주제별 모임 리스트",
-        to: "/book-info/author",
-      },
-      {
-        name: "출판사정보",
-        description: "당일 즉흥 모임 리스트",
-        to: "/book-info/publisher",
-      },
-    ],
-  },
-  {
-    name: "커뮤니티",
-    to: "/community",
-    items: [
-      {
-        name: "철학",
-        description: "철학 주제 커뮤니티",
-        to: "/community/philosophy",
-      },
+  //     {
+  //       name: "작가정보",
+  //       description: "도서 주제별 모임 리스트",
+  //       to: "/book-info/author",
+  //     },
+  //     {
+  //       name: "출판사정보",
+  //       description: "당일 즉흥 모임 리스트",
+  //       to: "/book-info/publisher",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "커뮤니티",
+  //   to: "/community",
+  //   items: [
+  //     {
+  //       name: "철학",
+  //       description: "철학 주제 커뮤니티",
+  //       to: "/community/philosophy",
+  //     },
 
-      {
-        name: "소설",
-        description: "국내 소설 거뮤니티",
-        to: "/community/novel",
-      },
-      {
-        name: "에세이",
-        description: "국내 에세이 커뮤니티",
-        to: "/community/essay",
-      },
-    ],
-  },
+  //     {
+  //       name: "소설",
+  //       description: "국내 소설 거뮤니티",
+  //       to: "/community/novel",
+  //     },
+  //     {
+  //       name: "에세이",
+  //       description: "국내 에세이 커뮤니티",
+  //       to: "/community/essay",
+  //     },
+  //   ],
+  // },
 ];
 
 export default function Navigation({
